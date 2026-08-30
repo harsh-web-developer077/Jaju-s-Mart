@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jaju's Mart | Payment</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo">🛒 JAJU'S MART</div><nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart</a></nav></header>
+<section class="page-hero"><p>SECURE CHECKOUT</p><h1>Payment</h1></section><main class="page-wrap"><div id="paymentRoot"></div></main>
+<script src="script.js"></script><script>
+(async()=>{
+ const cart=JSON.parse(localStorage.getItem("jajusCart")||"[]"),customer=JSON.parse(localStorage.getItem("jajusCustomer")||"{}"),method=localStorage.getItem("jajusPaymentMethod")||"online",root=document.getElementById("paymentRoot");
+ if(!cart.length){root.innerHTML='<div class="empty-panel"><h2>No active order</h2><a class="primary-btn" style="max-width:280px;margin:auto" href="products.html">Shop Products</a></div>';return;}
+ root.innerHTML='<div class="success-panel"><div class="icon">⏳</div><h2>Preparing your order…</h2><p>Please wait.</p></div>';
+ let r;
+ try{
+  r=await fetch("/api/create-order",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({cart,customer,paymentMethod:method})});
+ }catch(e){
+  root.innerHTML='<div class="empty-panel"><h2>Could not reach the server</h2><p>Make sure the Jaju\u2019s Mart server is running, then go back and try again.</p></div>';return;
+ }
+ if(!r.ok){
+  let msg="Something went wrong while placing your order.";
+  try{const errBody=await r.json();if(errBody&&errBody.error)msg=errBody.error;}catch(e){}
+  root.innerHTML='<div class="empty-panel"><h2>Could not create order</h2><p>'+msg+'</p><a class="primary-btn" style="max-width:280px;margin:20px auto 0;text-align:center" href="checkout.html">Back to Checkout</a></div>';return;
+ }
+ const order=await r.json();
+ if(method==="cod"){localStorage.removeItem("jajusCart");localStorage.setItem("jajusLastOrder",order.orderId);root.innerHTML='<div class="success-panel"><div class="icon">🎉</div><h2>Order Placed!</h2><p>Your order ID is <strong>'+order.orderId+'</strong>.</p><p>It has been saved for the store owner.</p><a class="primary-btn" style="max-width:280px;margin:auto;text-align:center" href="index.html">Continue Shopping</a></div>';return;}
+ const s=document.createElement("script");s.src="https://checkout.razorpay.com/v1/checkout.js";s.onload=()=>new Razorpay({key:order.key_id,amount:order.amount,currency:order.currency,name:"Jaju's Mart",description:"Jaju's Mart Order",order_id:order.id,handler:async response=>{
+   const v=await fetch("/api/verify-payment",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...response,orderId:order.orderId})});
+   const result=await v.json(); if(result.verified){localStorage.removeItem("jajusCart");localStorage.setItem("jajusLastOrder",order.orderId);root.innerHTML='<div class="success-panel"><div class="icon">🎉</div><h2>Payment Successful!</h2><p>Order ID: <strong>'+order.orderId+'</strong></p><p>Your order has been saved and payment verified.</p><a class="primary-btn" style="max-width:280px;margin:auto;text-align:center" href="index.html">Continue Shopping</a>';}else alert("Payment verification failed.");}}).open();document.body.appendChild(s);
+})();
+</script></body></html>

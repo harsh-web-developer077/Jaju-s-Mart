@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jaju's Mart | Electronics</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo">🛒 JAJU'S MART</div><nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="electronics.html">Electronics</a><a href="fashion.html">Fashion</a><a href="grocery.html">Grocery</a><a href="accessories.html">Accessories</a><a href="offer.html">Offers</a><a href="about.html">About</a></nav><div class="nav-actions"><a href="wishlist.html">❤️</a><a href="cart.html">🛒 <span id="cart-count">0</span></a></div></header>
+<section class="products-hero"><p>JAJU'S MART</p><h1 id="pageTitle">Electronics</h1><span>Real product photography • Updated prices • Wishlist & cart</span></section>
+<div class="product-tools"><input id="search-input" placeholder="Search products..."><select id="category-filter"><option value="">All categories</option><option value="electronics">Electronics</option><option value="fashion">Fashion</option><option value="grocery">Grocery</option><option value="accessories">Accessories</option></select></div>
+<main class="products-page"><div id="products-grid"></div></main><footer><div class="footer-logo">🛒 JAJU'S MART</div><p>Your everyday shopping destination.</p><div class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="offer.html">Offers</a><a href="about.html">About</a><a href="cart.html">Cart</a></div><p class="copyright">© 2026 Jaju's Mart. All rights reserved.</p></footer><script src="script.js"></script><script>
+const forcedCategory = new URLSearchParams(location.search).get("category") || "electronics";
+const wishlistKey="jajusWishlist";
+function getWish(){return JSON.parse(localStorage.getItem(wishlistKey)||"[]")}
+function setWish(x){localStorage.setItem(wishlistKey,JSON.stringify(x))}
+function toggleWish(p){
+ let w=getWish(), i=w.findIndex(x=>x.id===p.id);
+ if(i>=0) w.splice(i,1); else w.push(p);
+ setWish(w); renderProducts();
+}
+async function loadProducts(){
+ const r=await fetch("/api/products"); return r.json();
+}
+function productCard(p){
+ const wish=getWish().some(x=>x.id===p.id);
+ const finalPrice=Math.round(p.price*(1-p.offer/100));
+ const old=p.offer>0?`<del>₹${p.price.toLocaleString("en-IN")}</del>`:"";
+ return `<article class="product-card">
+ <div class="product-image-wrap"><img class="product-image" src="${p.image}" alt="${p.name}" loading="lazy"><button class="wishlist-btn ${wish?'active':''}" onclick='toggleWish(${JSON.stringify(p).replace(/'/g,"&#39;")})'>${wish?'♥':'♡'}</button>${p.offer?`<span class="discount-badge">${p.offer}% OFF</span>`:""}</div>
+ <div class="product-info"><div class="product-category">${p.category}</div><h3>${p.name}</h3><div class="product-price">₹${finalPrice.toLocaleString("en-IN")} ${old}</div>
+ <div class="product-actions"><a href="product-${p.id}.html">View Product</a><button onclick='jajuAddProduct(${JSON.stringify(p)})'>Add to Cart</button></div></div></article>`;
+}
+async function renderProducts(){
+ let list=await loadProducts(), cat=forcedCategory||document.getElementById("category-filter").value, q=document.getElementById("search-input").value.toLowerCase();
+ list=list.filter(p=>p.active && (!cat||p.category===cat) && (!q||p.name.toLowerCase().includes(q)));
+ document.getElementById("products-grid").innerHTML=list.length?list.map(productCard).join(""):'<div class="empty-panel"><h2>No products found</h2></div>';
+}
+document.getElementById("category-filter").value=forcedCategory;
+document.getElementById("category-filter").onchange=renderProducts;
+document.getElementById("search-input").oninput=renderProducts;
+renderProducts();
+</script></body></html>

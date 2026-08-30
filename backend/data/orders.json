@@ -1,0 +1,29 @@
+[
+  {
+    "orderId": "JM-MTE57R12-88227E",
+    "createdAt": "2026-08-29T08:53:04.023Z",
+    "status": "CANCELLED",
+    "paymentStatus": "COD_PENDING",
+    "paymentMethod": "cod",
+    "razorpayOrderId": null,
+    "razorpayPaymentId": null,
+    "customer": {
+      "firstName": "Harsh",
+      "lastName": "jaju",
+      "phone": "08302491321",
+      "email": "harshjaju07@gmail.com",
+      "address": "Right hand side 4th house near nehru park, backside gate of nehru park, straight road, Sri dungargarh, bikaner, Rajasthan",
+      "city": "Bikaner",
+      "pincode": "331803"
+    },
+    "items": [
+      {
+        "id": "premium-t-shirt",
+        "name": "Premium T-Shirt",
+        "price": 639,
+        "quantity": 1
+      }
+    ],
+    "total": 639
+  }
+]

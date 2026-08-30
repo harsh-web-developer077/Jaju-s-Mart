@@ -1,0 +1,1 @@
+All 30 product pages rebuilt from backend/data/products.json with working wishlist, cart, quantity, buy-now, actual image URLs, and preserved main site CSS.
