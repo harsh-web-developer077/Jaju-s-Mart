@@ -5,9 +5,9 @@
     "category": "electronics",
     "price": 15999,
     "originalPrice": 15999,
-    "offer": 9,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85",
-    "description": "Modern Smartphone — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Modern Smartphone \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -16,9 +16,9 @@
     "category": "electronics",
     "price": 2499,
     "originalPrice": 2499,
-    "offer": 5,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
-    "description": "Wireless Headphones — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Wireless Headphones \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -27,9 +27,9 @@
     "category": "electronics",
     "price": 42999,
     "originalPrice": 42999,
-    "offer": 8,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
-    "description": "Everyday Laptop — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Everyday Laptop \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -38,9 +38,9 @@
     "category": "electronics",
     "price": 3999,
     "originalPrice": 3999,
-    "offer": 4,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
-    "description": "Smart Watch — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Smart Watch \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -49,9 +49,9 @@
     "category": "electronics",
     "price": 28999,
     "originalPrice": 28999,
-    "offer": 14,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85",
-    "description": "Digital Camera — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Digital Camera \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -60,9 +60,9 @@
     "category": "electronics",
     "price": 14999,
     "originalPrice": 14999,
-    "offer": 7,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=85",
-    "description": "Android Tablet — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Android Tablet \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -71,10 +71,10 @@
     "category": "electronics",
     "price": 3299,
     "originalPrice": 3299,
-    "offer": 15,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1600080972464-8e5c8b0b2d4b?auto=format&fit=crop&w=900&q=85",
-    "description": "Gaming Controller — a practical choice from Jaju's Mart for everyday use.",
-    "active": false
+    "description": "Gaming Controller \u2014 a practical choice from Jaju's Mart for everyday use.",
+    "active": true
   },
   {
     "id": "bluetooth-speaker",
@@ -82,9 +82,9 @@
     "category": "electronics",
     "price": 2199,
     "originalPrice": 2199,
-    "offer": 26,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=85",
-    "description": "Bluetooth Speaker — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Bluetooth Speaker \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -93,9 +93,9 @@
     "category": "fashion",
     "price": 799,
     "originalPrice": 799,
-    "offer": 20,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
-    "description": "Premium T-Shirt — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Premium T-Shirt \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -104,9 +104,9 @@
     "category": "fashion",
     "price": 1899,
     "originalPrice": 1899,
-    "offer": 2,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
-    "description": "Classic Sneakers — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Classic Sneakers \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -115,9 +115,9 @@
     "category": "fashion",
     "price": 1499,
     "originalPrice": 1499,
-    "offer": 5,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85",
-    "description": "Casual Hoodie — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Casual Hoodie \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -126,9 +126,9 @@
     "category": "fashion",
     "price": 2499,
     "originalPrice": 2499,
-    "offer": 8,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
-    "description": "Denim Jacket — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Denim Jacket \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -137,9 +137,9 @@
     "category": "fashion",
     "price": 1799,
     "originalPrice": 1799,
-    "offer": 30,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=85",
-    "description": "Summer Dress — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Summer Dress \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -148,31 +148,31 @@
     "category": "fashion",
     "price": 1199,
     "originalPrice": 1199,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85",
-    "description": "Casual Shirt — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Casual Shirt \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "running-shoes",
     "name": "Running Shoes",
     "category": "fashion",
-    "price": 4999,
+    "price": 2399,
     "originalPrice": 2399,
-    "offer": 20,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",
-    "description": "Running Shoes — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Running Shoes \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "premium-rice",
     "name": "Premium Rice 5 kg",
     "category": "grocery",
-    "price": 399,
+    "price": 499,
     "originalPrice": 499,
-    "offer": 22,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=900&q=85",
-    "description": "Premium Rice 5 kg — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Premium Rice 5 kg \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -181,64 +181,64 @@
     "category": "grocery",
     "price": 159,
     "originalPrice": 159,
-    "offer": 9,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=900&q=85",
-    "description": "Fresh Apples 1 kg — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Fresh Apples 1 kg \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "orange-juice",
     "name": "Orange Juice",
     "category": "grocery",
-    "price": 149,
+    "price": 129,
     "originalPrice": 129,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=85",
-    "description": "Orange Juice — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Orange Juice \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "coffee",
     "name": "Premium Coffee",
     "category": "grocery",
-    "price": 499,
+    "price": 349,
     "originalPrice": 349,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85",
-    "description": "Premium Coffee — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Premium Coffee \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "snack-combo",
     "name": "Snack Combo",
     "category": "grocery",
-    "price": 499,
+    "price": 299,
     "originalPrice": 299,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1621939514649-280e2aa0b0d9?auto=format&fit=crop&w=900&q=85",
-    "description": "Snack Combo — a practical choice from Jaju's Mart for everyday use.",
-    "active": false
+    "description": "Snack Combo \u2014 a practical choice from Jaju's Mart for everyday use.",
+    "active": true
   },
   {
     "id": "breakfast-cereal",
     "name": "Breakfast Cereal",
     "category": "grocery",
-    "price": 199,
+    "price": 279,
     "originalPrice": 279,
-    "offer": 20,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?auto=format&fit=crop&w=900&q=85",
-    "description": "Breakfast Cereal — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Breakfast Cereal \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "olive-oil",
     "name": "Olive Oil",
     "category": "grocery",
-    "price": 999,
+    "price": 699,
     "originalPrice": 699,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85",
-    "description": "Olive Oil — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Olive Oil \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -247,20 +247,20 @@
     "category": "accessories",
     "price": 1299,
     "originalPrice": 1299,
-    "offer": 6,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
-    "description": "Everyday Backpack — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Everyday Backpack \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "classic-watch",
     "name": "Classic Wrist Watch",
     "category": "accessories",
-    "price": 3299,
+    "price": 1699,
     "originalPrice": 1699,
-    "offer": 8,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85",
-    "description": "Classic Wrist Watch — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Classic Wrist Watch \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -269,20 +269,20 @@
     "category": "accessories",
     "price": 599,
     "originalPrice": 599,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=900&q=85",
-    "description": "Classic Wallet — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Classic Wallet \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
     "id": "sunglasses",
     "name": "Classic Sunglasses",
     "category": "accessories",
-    "price": 799,
+    "price": 899,
     "originalPrice": 899,
-    "offer": 64,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85",
-    "description": "Classic Sunglasses — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Classic Sunglasses \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -291,9 +291,9 @@
     "category": "accessories",
     "price": 749,
     "originalPrice": 749,
-    "offer": 19,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=900&q=85",
-    "description": "Leather Belt — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Leather Belt \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -302,9 +302,9 @@
     "category": "accessories",
     "price": 499,
     "originalPrice": 499,
-    "offer": 50,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85",
-    "description": "Travel Mug — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Travel Mug \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   },
   {
@@ -313,10 +313,10 @@
     "category": "accessories",
     "price": 399,
     "originalPrice": 399,
-    "offer": 10,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1603313011108-4f2f9c9a2c7f?auto=format&fit=crop&w=900&q=85",
-    "description": "Phone Case — a practical choice from Jaju's Mart for everyday use.",
-    "active": false
+    "description": "Phone Case \u2014 a practical choice from Jaju's Mart for everyday use.",
+    "active": true
   },
   {
     "id": "cap",
@@ -324,9 +324,9 @@
     "category": "accessories",
     "price": 449,
     "originalPrice": 449,
-    "offer": 20,
+    "offer": 0,
     "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85",
-    "description": "Everyday Cap — a practical choice from Jaju's Mart for everyday use.",
+    "description": "Everyday Cap \u2014 a practical choice from Jaju's Mart for everyday use.",
     "active": true
   }
 ]
